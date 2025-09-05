@@ -21,7 +21,7 @@ body {
 
 .navbar {
   color: rgb(151, 151, 151);
-  background-color: #0000006d;
+  background-color: #232323d2;
   border-radius: 0px;
   border: none;
   width: calc(100% - 40px);
@@ -71,7 +71,7 @@ body {
   width: 100%;
 }
 .page1>h1 {
-  font-size: 60px;
+  font-size: 70px;
 }
 .page1>p {
   font-size: 20px;
