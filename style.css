@@ -21,12 +21,21 @@ body {
 
 .navbar {
   color: rgb(151, 151, 151);
-  background-color: #2d2d2d;
+  background-color: #0000006d;
   border-radius: 0px;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  border-bottom: white;
+  border: none;
+  width: calc(100% - 40px);
+  left: 20px;
+  transform: translateY(20px);
+  padding: 10px;
+  border-radius: 16px;
+  margin: 0px;
+  position: sticky;
+  top: 0;
+
+}
+.active {
+  color: black
 }
 
 .navbar-nav>li>a:hover {
@@ -34,12 +43,14 @@ body {
 }
 
 .navbar-default .navbar-brand, .navbar-nav>li>a {
-  color:white !important;
+  color:rgb(159, 159, 159) !important;
+  background-color: #00000000;
+  border-radius: 16px;
 }
 
 .main {
   flex: 1;
-  margin: 20px;
+  margin: 0px;
 }
 
 .footer {
@@ -48,4 +59,46 @@ body {
   color: white;
   padding: 20px 30px;
   width: 100%;
+  margin-top: 16px;
+}
+
+.footer>a {
+  color:#777777;
+}
+
+.page1 {
+  padding: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+}
+.page1>h1 {
+  font-size: 60px;
+}
+.page1>p {
+  font-size: 20px;
+}
+
+.background-image {
+  transform-origin: 0% 0%;
+  rotate: -15deg;
+  opacity: 20%;
+  position: fixed;
+  width:50vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+.social-icon {
+  filter: invert();
+  width: 40px;
+  border-radius: 8px;
+  padding: 6px;
+  margin: 0px;
+}
+
+.social-icon:hover {
+  filter: none;
 }
