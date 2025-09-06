@@ -58,12 +58,20 @@
     </head>
 
     <body style="background-color: white">
-        <video loop="true" autoplay muted style="height:100vh;">
+        <video loop="true" autoplay muted style="height:100vh;" id="myvideo">
             <source src="/content/frank-west-dead-rising.mp4" type="video/mp4"/>
         </video>
-        <audio autoplay controls>
+        <audio id="audio" autoplay>
             <source src="content/Coffin Nails - MF DOOM - lq.mp3" type="audio/mp3">
         </audio>
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
+
+        <input type="button" value="PLAY" onclick="play()" style="position: fixed; height: 100vh; width: 100vw; opacity: 0;">
     </body>
 
 </html>
